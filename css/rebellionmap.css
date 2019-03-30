@@ -1,0 +1,240 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* zero the margins */
+body {
+  margin: 0;
+  background-color: #020612;
+  cursor: url('../images/SSD_Cursor.png'), auto;
+}
+
+.w-clearfix:before,
+.w-clearfix:after {
+  content: " ";
+  display: table;
+}
+.w-clearfix:after {
+  clear: both;
+}
+
+.space {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  background-image: -webkit-radial-gradient(circle farthest-corner at 50% 100%, rgba(187, 82, 0, .5), rgba(0, 46, 143, .5)), url('../images/stars.jpg');
+  background-image: radial-gradient(circle farthest-corner at 50% 100%, rgba(187, 82, 0, .5), rgba(0, 46, 143, .5)), url('../images/stars.jpg');
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, 1000px;
+}
+
+.top-bot {
+  display: block;
+  height: auto;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.left-right {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+}
+
+.mid-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+}
+
+.svg {
+  display: block;
+  width:calc(100vh/0.5625);
+  max-height: 100vh;
+  max-width: 100vw;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+.centre {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+}
+
+#Names, .imperial, .droid, .intel, #Coruscant, #menuText {
+  pointer-events: none;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+#menuText {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+#menuBackground, #menuGradient {
+  transition: 0.2s ease-out;
+}
+
+.mask {
+  position: fixed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .75);
+  transition: 0.5s ease;
+}
+
+.base {
+  position: relative;
+  width: 100%;
+  min-width: 232px;
+  padding: 30px;
+  clear: both;
+  border-style: none solid solid;
+  border-width: 8px;
+  border-color: #fc6;
+  border-radius: 0px 0px 25px 25px;
+}
+
+.leftborder {
+  width: 28px;
+  height: 25px;
+  float: left;
+  border-top: 8px solid #fc6;
+  border-left: 8px solid #fc6;
+  border-top-left-radius: 25px;
+}
+
+.rightborder {
+  width: 28px;
+  height: 25px;
+  float: right;
+  border-style: solid solid none none;
+  border-width: 8px;
+  border-color: #fc6;
+  border-top-right-radius: 25px;
+}
+
+.button {
+  display: block;
+  margin-bottom: 20px;
+  padding: 9px 15px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background-color: transparent;
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+  font-size: 16px;
+  line-height: 17px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  cursor: url('../images/SSD_Cursor.png'), pointer;
+  opacity: 0;
+  transition: 0.5s ease-out;
+}
+
+.button.newmap:hover {
+  background-color: rgba(0, 153, 153, .6);
+}
+
+.button.continue:hover {
+  background-color: rgba(185, 96, 0, .6);
+}
+
+.heading-2 {
+  position: absolute;
+  left: 0px;
+  top: -32px;
+  right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: Montserrat, sans-serif;
+  color: #fc6;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 991px) {
+  body {
+    cursor: auto;
+  }
+  .button {
+    cursor: pointer;
+  }
+}

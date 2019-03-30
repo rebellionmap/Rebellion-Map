@@ -1,0 +1,22 @@
+{
+  "short_name": "Rebellion",
+  "name": "Rebellion Map",
+  "description": "Track the locations revealed by your Probe Droid cards, subjugation or loyalty markers, and mission cards.",
+  "icons": [
+    {
+      "src": "images/droid.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "/images/droid-icon.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    }
+  ],
+  "start_url": "index.html",
+  "background_color": "#020612",
+  "theme_color": "#000",
+  "display": "standalone",
+  "orientation": "landscape"
+}
